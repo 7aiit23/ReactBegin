@@ -28,7 +28,9 @@ class Menu extends Component {
                         <CardTitle>{dish.name}</CardTitle>
                         <CardText>{dish.description}</CardText>
                     </CardBody>
+
                 </Card>
+
             );
         else
             return (
@@ -38,6 +40,7 @@ class Menu extends Component {
 
 
     render() {
+
         const menu = this.props.dishes.map((dish) => {
             return (
                 <div className="col-12 col-md-5 m-1">
@@ -52,6 +55,7 @@ class Menu extends Component {
             );
         });
 
+
         return (
             <div className="container">
                 <div className="row">
@@ -64,7 +68,10 @@ class Menu extends Component {
                 </div>
             </div>
         );
+
+
     }
+
 }
 
 
